@@ -1,63 +1,8 @@
-graph TD
-    A[AI Music Generation] -->|Generates| B[AI-Generated Music & Lyrics]
-    B -->|Uploads via HTTP| C[0G HTTP Proxy]
-    C -->|Stores| D[0G Contract + Storage]
-    D -->|Retrieves via HTTP| C
-    C -->|Downloads| E[User Access via Private Identity]
-    
-    subgraph Frontend
-        F[User Interface]
-        F --> G[User Initiates Music Generation]
-        G --> A
-    end
-    
-    subgraph Backend
-        C
-        D
-    end
-    
-    E -->|Showcases| H[Showcase to Interested Users]
-    H -->|Facilitate Sales| I[Decentralized Marketplace]
-    I -->|Monetize| J[User Earns Compensation]
-    
-    F -->|Secure Access| E
-    F -->|Verify Copyright| K[Copyright Compliance]
-    K --> D
-    F -->|Control| L[User Controls Data]
-    L --> D
+
 
 ### SoundWaveX 系统架构图
 
-```mermaid
-graph TD
-    A[AI Music Generation] -->|Generates| B[AI-Generated Music & Lyrics]
-    B -->|Uploads via HTTP| C[0G HTTP Proxy]
-    C -->|Stores| D[0G Contract + Storage]
-    D -->|Retrieves via HTTP| C
-    C -->|Downloads| E[User Access via Private Identity]
-    
-    subgraph Frontend
-        F[User Interface]
-        F --> G[User Initiates Music Generation]
-        G --> A
-    end
-    
-    subgraph Backend
-        C
-        D
-    end
-    
-    E -->|Showcases| H[Showcase to Interested Users]
-    H -->|Facilitate Sales| I[Decentralized Marketplace]
-    I -->|Monetize| J[User Earns Compensation]
-    
-    F -->|Secure Access| E
-    F -->|Verify Copyright| K[Copyright Compliance]
-    K --> D
-    F -->|Control| L[User Controls Data]
-    L --> D
-```
-
+![SoundWaveX 系统架构图](./sys-framework.png)
 **架构图说明：**
 
 1. **AI Music Generation (AI音乐生成)**：
